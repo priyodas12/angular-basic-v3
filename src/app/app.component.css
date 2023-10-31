@@ -1,0 +1,8 @@
+h2{
+    display: flex;
+    color:blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
