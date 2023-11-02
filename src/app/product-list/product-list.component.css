@@ -1,4 +1,31 @@
 *{
-    color:cadetblue;
-    
+    color:rgb(62, 15, 138);  
+}
+
+.product-desc{
+    height:auto;
+    width: 240px;;
+    padding: 10px;
+    margin:5px;
+    border: 1px solid black;
+    border-radius: 10px;;
+}
+
+p{
+    padding-top: 2px;;
+}
+
+button{
+    height:auto;
+    width: 80px;;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+button:hover{
+    background-color: chartreuse;
+}
+
+button:disabled{
+    background-color: rgb(240, 243, 237);
 }

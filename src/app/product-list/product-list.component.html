@@ -1,4 +1,10 @@
-<p>Name: {{product['name']}}</p>
-<p>Price: INR {{product['price']}}</p>
-<p>Color: {{product['color']}}</p>
-<p>Discount: {{product["discount"]}}%</p>
+<div class="product-desc">
+  <img [src]="product.imageUrl" alt="img-iphone" srcset="">
+    <p>Name: {{ product['name'] }}</p>
+  <p>Price: INR {{ product['price'] }}</p>
+  <p>Color: {{ product['color'] }}</p>
+  <p>Discount: {{ product["discount"] }}%</p>
+  <p [innerText]="product.available?'Available':'Out of Stock'" 
+  [style]="{'color': (product.available) ? '#186F65' : '#FF4B91'}"></p>
+  <button [disabled]="!product.available" type="submit">Buy Now</button>
+</div>

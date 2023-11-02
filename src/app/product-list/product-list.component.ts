@@ -10,10 +10,11 @@ import {
 export class ProductListComponent {
 
   product = {
+    imageUrl: '../../assets/iphone.jpeg',
     name: "Iphone 15",
     price: 12000,
     color: "Black",
     discount: 16,
-    tst: "data"
+    available: false,
   }
 }
