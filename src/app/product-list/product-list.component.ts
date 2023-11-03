@@ -11,6 +11,9 @@ export class ProductListComponent {
 
   searchUrl = "http://www.google.com";
   name = "test";
+
+  addToKartCount = 0;
+  maxProductValue = 5;
   product = {
     imageUrl: '../../assets/iphone.jpeg',
     name: "Iphone 15",
@@ -20,7 +23,17 @@ export class ProductListComponent {
     available: true,
   }
 
-  onNameChange() {
-    this.name = "john"
+  onNameChange(event: any) {
+    console.log(event);
+    this.name = event.target.value;
+  }
+
+  onCountIncrease() {
+    this.addToKartCount++;
+  }
+
+  onCountDecrease(event: any) {
+    console.log(event);
+    this.addToKartCount = this.addToKartCount > 0 ? this.addToKartCount - 1 : 0
   }
 }

@@ -5,7 +5,7 @@
 .product-desc{
     height:auto;
     width: 240px;;
-    padding: 10px;
+    padding: 10px 30px;
     margin:5px;
     border-radius: 10px;;
 }
@@ -19,6 +19,7 @@ button{
     width: 80px;;
     border-radius: 5px;
     background-color: azure;
+    margin-top: 6px;
 }
 
 button:hover{
@@ -27,4 +28,21 @@ button:hover{
 
 button:disabled{
     background-color: rgb(240, 243, 237);
+}
+
+.count-btn{
+    width: 40px;
+    padding: 8px 3px;
+    margin:6px 4px;
+    background-color: rgb(200, 250, 171);
+}
+
+.display-count{
+    padding: 4px;
+    margin: 4px 4px;
+}
+
+.max-product-alert{
+    color:red;
+    font-size: x-small;
 }

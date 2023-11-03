@@ -23,7 +23,11 @@
   </tr>
  </table> -->
 
- <!--Event binding-->
- <input type="text" [value]="name" (input)="onNameChange()"/>
- <p [innerText]="name"></p>
+ <!--Event binding: view Template to component class-->
+ <!-- <input type="text" (input)="onNameChange($event)"/>
+ <p [innerText]="name"></p> -->
+ <button id="remove" class="count-btn" type="button" (click)="onCountDecrease($event)" >-</button>
+ <span class="display-count">{{addToKartCount}}</span>
+ <button id="add" class="count-btn" type="button" (click)="onCountIncrease()">+</button>
+ <p class="max-product-alert" [hidden]="maxProductValue!==addToKartCount">You Have order Maximum number of Iphone!</p>
 </div>
