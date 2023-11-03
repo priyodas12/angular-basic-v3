@@ -9,6 +9,7 @@ export class SearchComponent {
   searchText: string = ""
 
   onSearchText(event: any) {
+    console.log(event);
     this.searchText = event.target.value;
   }
 }
