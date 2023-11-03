@@ -15,10 +15,11 @@ import { DisplayGreyDirective } from './directives/display-grey.directive';
 import { DisplayGreenDirective } from './directives/display-green.directive';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ContainerComponent, SearchComponent, DisplayGreyDirective, DisplayGreenDirective, ProductListComponent, ProductComponent
+    AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ContainerComponent, SearchComponent, DisplayGreyDirective, DisplayGreenDirective, ProductListComponent, ProductComponent, FilterComponent
   ],
   imports: [
     BrowserModule,
