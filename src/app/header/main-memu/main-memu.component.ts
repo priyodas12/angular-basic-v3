@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-memu.component.css']
 })
 export class MainMemuComponent {
-
+  mainMemuItems = ['Home', 'Products', 'Offers', 'About', 'Contact Us']
 }

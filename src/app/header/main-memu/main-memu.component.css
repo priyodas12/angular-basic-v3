@@ -1,6 +1,6 @@
 .ekart-bottom-bar{
     display: flex;
-    justify-content: space-around;
-    align-items: last baseline;
     font-size: large;  
+    background-color: chartreuse;
 }
+
