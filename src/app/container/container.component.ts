@@ -3,11 +3,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-container',
+  templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css']
 })
-export class ProductListComponent {
+export class ContainerComponent {
 
   searchUrl = "http://www.google.com";
   name = "test";
