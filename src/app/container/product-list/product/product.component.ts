@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductComponent {
 
-  @Input()
+  @Input()// consumer from parent component
   product: {
     id: number,
     title: string,
