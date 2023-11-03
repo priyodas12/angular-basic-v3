@@ -6,5 +6,24 @@
   <p>Discount: {{ product["discount"] }}%</p>
   <p [innerText]="product.available?'Available':'Out of Stock'" 
   [style]="{'color': (product.available) ? '#186F65' : '#FF4B91'}"></p>
+
+  <!--Property binding-->
   <button [disabled]="!product.available" type="submit">Buy Now</button>
+
+  <!--Attribute binding:Attributes are defined by HTML, but properties are defined by the DOM
+  
+  Attribute – Represents the initial value and does not change.
+  Property – Represents the current value and can change.
+  -->
+  <a [attr.data-id]="1" [href]="searchUrl">Compare</a>
+
+  <!-- <table>
+  <tr>
+    <td [attr.colspan]="3">This content spans three columns</td>
+  </tr>
+ </table> -->
+
+ <!--Event binding-->
+ <input type="text" [value]="name" (input)="onNameChange()"/>
+ <p [innerText]="name"></p>
 </div>
