@@ -5,7 +5,7 @@
                 <i class="fa fa-heart" aria-hidden="true"></i>
             </div>
             <div class="ekart-on-sale-tag">
-                <marquee behavior="" direction="">{{item.rating['count']*.15}} % OFF</marquee></div>
+               {{(item.rating['count']*.15).toFixed(0)}} % OFF</div>
         </div>
         <div class="ekart-product-image">
             <img [src]="item.image" alt="" class="ekart-product-img">
@@ -13,6 +13,20 @@
         <div class="ekart-add-to-price">INR {{item.price}}</div>
         <div class="ekart-product-name">{{item.title}}</div>
         <div class="ekart-product-category">{{item.category}}</div>
-        <div class="ekart-product-rating"><i class="fa fa-star" aria-hidden="true"></i>{{item.rating['rate']}}</div>
+        <div class="ekart-product-rating" ngSwitch="">
+            <div [ngSwitch]="item.rating['rate'].toFixed(0)">
+                <div class="one" *ngSwitchCase="'1'"><i class="fa fa-star" aria-hidden="true"></i> 1</div>
+                <div  class="two" *ngSwitchCase="'2'"><i class="fa fa-star" aria-hidden="true"></i> 2</div>
+                <div  class="three" *ngSwitchCase="'3'"><i class="fa fa-star" aria-hidden="true"></i> 3</div>
+                <div  class="four" *ngSwitchCase="'4'"><i class="fa fa-star" aria-hidden="true"></i> 4</div>
+                <div  class="five" *ngSwitchCase="'5'"><i class="fa fa-star" aria-hidden="true"></i> 5</div>
+                <div *ngSwitchDefault>This is Default</div>
+            </div>
+        </div>
+        <div class="product-status-code">
+            <p [innerText]="item.is_in_invetory===true?'Available':'Out of Stock'"
+            [ngStyle]="{'color': (item.is_in_invetory) ? 'green' : 'red','font-size':'12px'}"></p>
+        </div>
+         
     </div>
 </div>

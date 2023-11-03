@@ -17,7 +17,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 3.9,
         "count": 120
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 2,
@@ -29,7 +30,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 4.1,
         "count": 259
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 3,
@@ -42,6 +44,8 @@ export class ProductListComponent {
         "rate": 4.7,
         "count": 500
       }
+      ,
+      "is_in_invetory": true
     },
     {
       "id": 4,
@@ -53,7 +57,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.1,
         "count": 430
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 5,
@@ -65,7 +70,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 4.6,
         "count": 400
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 6,
@@ -77,7 +83,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 3.9,
         "count": 70
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 7,
@@ -89,7 +96,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 3,
         "count": 400
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 8,
@@ -101,7 +109,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 1.9,
         "count": 100
-      }
+      },
+      "is_in_invetory": false
     },
     {
       "id": 9,
@@ -113,7 +122,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 3.3,
         "count": 203
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 10,
@@ -125,7 +135,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.9,
         "count": 470
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 11,
@@ -137,7 +148,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 4.8,
         "count": 319
-      }
+      },
+      "is_in_invetory": false
     },
     {
       "id": 12,
@@ -149,7 +161,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 4.8,
         "count": 400
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 13,
@@ -161,7 +174,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.9,
         "count": 250
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 14,
@@ -173,7 +187,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.2,
         "count": 140
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 15,
@@ -185,7 +200,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.6,
         "count": 235
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 16,
@@ -197,7 +213,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 2.9,
         "count": 340
-      }
+      },
+      "is_in_invetory": false
     },
     {
       "id": 17,
@@ -221,7 +238,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 4.7,
         "count": 130
-      }
+      },
+      "is_in_invetory": true
     },
     {
       "id": 19,
@@ -234,6 +252,8 @@ export class ProductListComponent {
         "rate": 4.5,
         "count": 146
       }
+      ,
+      "is_in_invetory": true
     },
     {
       "id": 20,
@@ -245,7 +265,8 @@ export class ProductListComponent {
       "rating": {
         "rate": 3.6,
         "count": 145
-      }
+      },
+      "is_in_invetory": false
     }
   ]
 

@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     padding: 5px 8px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .ekart-searh-input-input{
     width: 450px;
     min-height: 35px;
-    border-radius: 3px;
+    border-radius: 5px;
     border-right: none;
 }
 
@@ -17,6 +17,7 @@
     min-height: 30px;
     background-color: rgb(1, 12, 12);
     color: aliceblue;
+     border-radius: 5px;
 }
 
 .ekart-search-result-for{
