@@ -1,0 +1,59 @@
+img{
+    height:200px;
+    width:160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.ekart-add-to-wishlist{
+ color: deeppink;
+}
+
+.ekart-products-container{   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ekart-product-item{
+    display: block;
+    width: 300px;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;;
+}
+
+.ekart-product-item:hover{
+    -webkit-box-shadow: 0 0 1px 3px #000 inset;
+    -moz-box-shadow: 0 0 1px 3px #000 inset;
+    box-shadow: 10px 20px 18px #cccccc;
+    transform: scale(1.05);
+}
+
+.ekart-product-name{
+   color:brgb(83, 6, 155);
+    margin-bottom: 10px;    
+}
+
+.ekart-add-to-price{
+    margin-bottom: 10px;
+    color:darkgreen
+}
+
+.ekart-product-category{
+    margin-bottom: 10px;
+    color:rgb(0, 77, 100) ;
+    font-size: 12px;;
+}
+
+.ekart-product-rating{
+     margin-bottom: 10px;
+    color:rgb(233, 83, 14);
+}
+
+.ekart-on-sale-tag{
+     color:rgb(231, 36, 10) ;
+    font-size: 20px;;
+}

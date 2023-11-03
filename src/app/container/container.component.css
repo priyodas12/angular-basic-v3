@@ -39,3 +39,8 @@ button:disabled{
     color:red;
     font-size: x-small;
 }
+
+.product-desc{
+       margin: 20px auto;
+       padding: 0px 20vh;
+}

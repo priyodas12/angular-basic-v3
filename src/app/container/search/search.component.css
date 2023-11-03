@@ -6,8 +6,9 @@
 }
 
 .ekart-searh-input-input{
-    width: 400px;
-    min-height: 30px;
+    width: 450px;
+    min-height: 35px;
+    border-radius: 3px;
     border-right: none;
 }
 
