@@ -2,4 +2,4 @@
     <input type="text" appDisplayGrey class="ekart-searh-input-input"[(ngModel)]="searchText"/>
     <button class="btn btn-search">Search</button>
 </div>
-<div class="ekart-search-result-for">Search result For : <strong>{{searchText}}</strong></div>
+<div class="ekart-search-result-for" *ngIf="searchText!==''">Search result For : <strong>{{searchText}}</strong></div>
