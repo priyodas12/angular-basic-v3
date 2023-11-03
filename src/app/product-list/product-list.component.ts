@@ -23,6 +23,10 @@ export class ProductListComponent {
     available: true,
   }
 
+  productList = [
+    "Shoe", "Lamp", "Bedsheet", "Almirah", "Sofa", "Flower"
+  ]
+
   onNameChange(event: any) {
     console.log(event);
     this.name = event.target.value;

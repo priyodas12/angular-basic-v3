@@ -11,11 +11,12 @@ import { SearchBarComponent } from './header/search-bar/search-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SearchComponent } from './product-list/search/search.component';
 import { FormsModule } from '@angular/forms';
-import { DisplayGreyDirective } from './product-list/display-grey.directive';
+import { DisplayGreyDirective } from './directives/display-grey.directive';
+import { DisplayGreenDirective } from './directives/display-green.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ProductListComponent, SearchComponent, DisplayGreyDirective
+    AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ProductListComponent, SearchComponent, DisplayGreyDirective, DisplayGreenDirective
   ],
   imports: [
     BrowserModule,
