@@ -1,5 +1,6 @@
 <div class="ekart-search-product">
     <input type="text" appDisplayGrey class="ekart-searh-input-input"[(ngModel)]="searchText"/>
-    <button class="btn btn-search">Search</button>
+    <!--apply btn class always, btn-search while searchText truthify-->
+    <button [ngClass]="{'btn':true,'btn-search':searchText, 'btn-search-disabled':!searchText}" [disabled]="!searchText">Search</button>
 </div>
 <div class="ekart-search-result-for" *ngIf="searchText!==''">Search result For : <strong>{{searchText}}</strong></div>
