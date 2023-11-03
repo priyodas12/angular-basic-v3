@@ -22,7 +22,8 @@
 }
 
 .btn-search:hover{
-    background-color: chartreuse;
+    background-color: rgb(129, 241, 16);
+    color: rgb(240, 67, 4);
     
 }
 
