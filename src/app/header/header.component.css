@@ -21,7 +21,7 @@ img{
 
 .ekart-bottom-bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: stretch;
     align-items: last baseline;
     font-size: large;  
 }

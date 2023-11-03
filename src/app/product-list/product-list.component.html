@@ -1,33 +1,36 @@
+
 <div class="product-desc">
-  <img [src]="product.imageUrl" alt="img-iphone" srcset="">
+  <!-- <img [src]="product.imageUrl" alt="img-iphone" srcset="">
     <p>Name: {{ product['name'] }}</p>
   <p>Price: INR {{ product['price'] }}</p>
   <p>Color: {{ product['color'] }}</p>
   <p>Discount: {{ product["discount"] }}%</p>
   <p [innerText]="product.available?'Available':'Out of Stock'" 
-  [style]="{'color': (product.available) ? '#186F65' : '#FF4B91'}"></p>
+  [style]="{'color': (product.available) ? '#186F65' : '#FF4B91'}"></p> -->
 
   <!--Property binding-->
-  <button [disabled]="!product.available" type="submit">Buy Now</button>
+  <!-- <button [disabled]="!product.available" type="submit">Buy Now</button> -->
 
-  <!--Attribute binding:Attributes are defined by HTML, but properties are defined by the DOM
-  
-  Attribute – Represents the initial value and does not change.
-  Property – Represents the current value and can change.
-  -->
-  <a [attr.data-id]="1" [href]="searchUrl">Compare</a>
+  <!--Attribute binding:Attributes are defined by HTML, but properties are defined by the DOM ,Attribute – Represents the initial value and does not change.Property – Represents the current value and can change.-->
+  <!-- <a [attr.data-id]="1" [href]="searchUrl">Compare</a> -->
 
   <!-- <table>
   <tr>
     <td [attr.colspan]="3">This content spans three columns</td>
   </tr>
- </table> -->
+ </table> 
+-->
 
  <!--Event binding: view Template to component class-->
  <!-- <input type="text" (input)="onNameChange($event)"/>
  <p [innerText]="name"></p> -->
- <button id="remove" [disabled]="addToKartCount===0" class="count-btn" type="button" (click)="onCountDecrease($event)" >-</button>
+ <!-- <button id="remove" [disabled]="addToKartCount===0" class="count-btn" type="button" (click)="onCountDecrease($event)" >-</button>
  <span class="display-count">{{addToKartCount}}</span>
  <button id="add" [disabled]="maxProductValue===addToKartCount" class="count-btn" type="button" (click)="onCountIncrease()">+</button>
- <p class="max-product-alert" [hidden]="maxProductValue>addToKartCount">You Have order Maximum number of Iphone!</p>
-</div>
+ <p class="max-product-alert" [hidden]="maxProductValue>addToKartCount">You Have order Maximum number of Iphone!</p> -->
+
+ <app-search></app-search>
+ <div class="items" *ngFor="let item of [1,2,3,4,5]">
+    <p [innerText]="item"></p>
+ </div>
+</div> 

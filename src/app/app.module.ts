@@ -9,16 +9,20 @@ import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { MainMemuComponent } from './header/main-memu/main-memu.component';
 import { SearchBarComponent } from './header/search-bar/search-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { SearchComponent } from './product-list/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { DisplayGreyDirective } from './product-list/display-grey.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ProductListComponent
+    AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMemuComponent, SearchBarComponent, ProductListComponent, SearchComponent, DisplayGreyDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,HeaderComponent]
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class AppModule { }
