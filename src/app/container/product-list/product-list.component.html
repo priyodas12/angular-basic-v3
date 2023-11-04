@@ -1,7 +1,16 @@
 <div class="filter-products">
-    <app-filter [allProducts]="totalProdCount" [inStockProducts]="inStock" [outOfStockProducts]="outOfStock"></app-filter>
+    <app-filter  [allProducts]="totalProdCount"
+                 [inStockProducts]="inStock"
+                 [outOfStockProducts]="outOfStock"
+                 (selectedRadioBtnChange)="onChangeFilterData($event)"><!--event binding of child class to pass the data to parent-->
+    </app-filter>
 </div>
 <div class="ekart-products-container">
     <!--custom property binding product:in child to iterable prod-->
-    <app-product *ngFor="let prod of products" [product]="prod"></app-product>
+    <div *ngFor="let prod of products" >
+        <app-product [product]="prod" *ngIf="filterData==='all' ||
+        (filterData==='inStock' && prod.is_in_invetory===true ) || 
+        (filterData==='outOfStock' && prod.is_in_invetory!==true )">
+        </app-product>
+    </div>
 </div>

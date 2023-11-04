@@ -1,6 +1,6 @@
 .filter-container{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding:10px;
     font-size: 14px;;
 }
