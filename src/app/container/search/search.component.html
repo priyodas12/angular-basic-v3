@@ -9,6 +9,6 @@
       [disabled]="!searchText"
       (click)="onSearchText($event)"
       >Search</button> -->
-    <button class="btn btn-search" (click)="onSearchDataInput(serachInput)">Search</button>
+    <button class="btn btn-search" (click)="onSearchDataInput()">Search</button>
 </div>
 <div class="ekart-search-result-for" *ngIf="searchText!==''">Search result For : <strong>{{searchText}}</strong></div>
