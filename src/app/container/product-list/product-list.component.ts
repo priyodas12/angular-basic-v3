@@ -282,4 +282,9 @@ export class ProductListComponent {
     //console.log("onChangeFilterData trigger! inputRadioButton value: " + event);
     this.filterData = event;
   }
+
+  @Input()
+  searchedText: string = '';
+
+
 }

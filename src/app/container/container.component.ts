@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -37,5 +37,13 @@ export class ContainerComponent {
   onCountDecrease(event: any) {
     console.log(event);
     this.addToKartCount = this.addToKartCount > 0 ? this.addToKartCount - 1 : 0
+  }
+
+  @Input()
+  searchDataInput: string = '';
+
+  setSearchedTextInput(value: string) {
+    console.log(value);
+    this.searchDataInput = value;
   }
 }
